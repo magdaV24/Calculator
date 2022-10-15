@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color:  rgb(245,222,179);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color:  rgb(188,152,126);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0,0 ,0 , 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 650px;
+    width: 400px;
+    border-radius: 25px;
+}
+
+.display{
+    height: 100px;
+    width: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(245,245,220, .5);
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.result{
+    position: absolute;
+    margin-top: 20px;
+    font-size: 50px; 
+    margin-right: 0px;
+}
+
+.history{
+    position: absolute;
+    margin-top: 5px;
+    font-size: 25px;
+    opacity: .5;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.button{
+    background-color: rgb(219,112,147);
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: .2s ease-out;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 47px;
+    margin-top: 10px;
+}
+
+.button-zero{
+    width: 175px;
+    height: 75px;
+    border-radius: 160px;
+    float: left;
+}
+
+.coral{
+    background-color: rgb(255,99,71);
+}
+
+.saffron{
+    background-color:  rgb(244,196,48);
+}
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
+}
